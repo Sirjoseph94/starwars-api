@@ -1,11 +1,10 @@
 import express from "express";
-import dotenv from "dotenv";
 import helmet from "helmet";
 import cors from "cors"
 
-dotenv.config();
+import CONFIG from "./config/index.js";
 
-const PORT = process.env.PORT || 7001;
+const PORT = CONFIG.PORT;
 const app = express();
 
 app.use(cors())
@@ -21,5 +20,5 @@ app.use((_req, res) =>
 );
 
 app.listen(PORT, () => {
-  console.log(`Server live at PORT: ${PORT}`);
+  console.log(`Server live at PORT: ${PORT} 🚀`);
 });

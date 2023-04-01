@@ -1,5 +1,5 @@
 import dotenv from "dotenv";
-dotenv.config;
+dotenv.config();
 
 const CONFIG = {
   PORT: Number(process.env.PORT) || 7000,

@@ -9,9 +9,8 @@ datasource db {
 
 model Comment{
   id String @id @default(cuid())
-  ip_address String @db.Inet
-  film_id Int
-  episode_id Int
+  ipAddress String @db.Inet
+  filmId Int
   text String @db.VarChar(500)
   createdAt DateTime @default(now())
 }

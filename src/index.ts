@@ -24,7 +24,7 @@ app.get("/", (_req, res)=>{
   res.status(200).send("<h1>Welcome to Starwars API.</h1>")
 })
 //Return 404 error
-app.use("*",(_req, res) =>
+app.use((_req, res) =>
   res
     .status(404)
     .json({ status: "Not Found", message: "This route does not exist" })

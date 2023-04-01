@@ -3,6 +3,7 @@ import helmet from "helmet";
 import cors from "cors"
 
 import CONFIG from "./config/index.js";
+import Routes from "./routes/index.js"
 
 const PORT = CONFIG.PORT;
 const app = express();
@@ -12,7 +13,9 @@ app.use(helmet())
 app.use(express.json())
 app.use(express.urlencoded({extended: true}))
 
+Routes(app)
 
+//Return 404 error
 app.use((_req, res) =>
   res
     .status(404)

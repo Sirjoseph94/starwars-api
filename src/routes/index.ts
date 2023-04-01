@@ -5,8 +5,8 @@ import characterRoute from "./charactersRoute.js"
 
 const Routes = (app: Router)=>{
   app.use("/api/v1/movies", moviesRoute)
-  app.use("api/v1/comments", commentsRoute)
-  app.use("api/v1/character", characterRoute)
+  app.use("/api/v1/comments", commentsRoute)
+  app.use("/api/v1/characters", characterRoute)
 }
 
 export default Routes

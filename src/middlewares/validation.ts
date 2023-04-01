@@ -1,21 +1,21 @@
 import { Request, Response, NextFunction } from "express";
 import { AnyZodObject } from "zod";
+// import { fromZodError } from "zod-validation-error";
 
 const validate =
   (schema: AnyZodObject) =>
   (req: Request, res: Response, next: NextFunction) => {
     try {
-      const valid = schema.safeParse({
+    schema.parse({
         body: req.body,
         query: req.query,
         params: req.params,
       });
-      if (!valid.success) throw valid.error;
-      req.body = valid.data.body;
       return next();
-    } catch (error) {
-      console.error(error);
-      return res.status(400).json(error);
+    } catch (error: any) {
+      const validationError = error;
+      console.error(validationError);
+      return res.status(400).json(validationError);
     }
   };
 

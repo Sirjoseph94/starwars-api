@@ -15,6 +15,7 @@ specifiers:
   prisma: ^4.12.0
   typescript: ^5.0.3
   zod: ^3.21.4
+  zod-validation-error: ^1.1.0
 
 dependencies:
   '@prisma/client': 4.12.0_prisma@4.12.0
@@ -24,6 +25,7 @@ dependencies:
   express: 4.18.2
   helmet: 6.0.1
   zod: 3.21.4
+  zod-validation-error: 1.1.0_zod@3.21.4
 
 devDependencies:
   '@types/compression': 1.7.2
@@ -621,6 +623,15 @@ packages:
   /vary/1.1.2:
     resolution: {integrity: sha512-BNGbWLfd0eUPabhkXUVm0j8uuvREyTh5ovRa/dyow/BqAbZJyC+5fU+IzQOzmAKzYqYRAISoRhdQr3eIZ/PXqg==}
     engines: {node: '>= 0.8'}
+    dev: false
+
+  /zod-validation-error/1.1.0_zod@3.21.4:
+    resolution: {integrity: sha512-CI0zGWQjyDN0sLcmFiD+wnvkkJaLo6hNB4JBUDltkl6+CeHfnnQKU4Ff6ktMc+VmO/j2+vtLlx4S5xaw8YQN6A==}
+    engines: {node: ^14.17 || >=16.0.0}
+    peerDependencies:
+      zod: ^3.18.0
+    dependencies:
+      zod: 3.21.4
     dev: false
 
   /zod/3.21.4:

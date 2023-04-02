@@ -28,6 +28,8 @@ To get started, clone this repository to your local machine and run the followin
 The API documentation of the availible endpoints can be found here
 [API DOC](https://mystarwars.up.railway.app/api-docs)
 
+NB: Choose the `Test server` option to use the openAPI docs online
+
 ## Live DEMO
 The live demo is hosted here
 

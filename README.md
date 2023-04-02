@@ -30,4 +30,5 @@ The API documentation of the availible endpoints can be found here
 
 ## Live DEMO
 The live demo is hosted here
+
 [Live demo link](https://mystarwars.up.railway.app/)

@@ -7,7 +7,7 @@
   "scripts": {
     "start": "node dist/index.js",
     "compile": "npx tsc",
-    "prepare": "npx prisma db push && npm run compile"
+    "build": "npx prisma migrate deploy && npm run compile"
   },
   "keywords": [],
   "author": "",

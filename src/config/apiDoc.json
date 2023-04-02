@@ -250,28 +250,6 @@
         "summary": "list comments",
         "description": "Retrieve list of comments sorted in desc order of which it was created",
         "operationId": "listComments",
-        "requestBody": {
-          "content": {
-            "application/json": {
-              "schema": {
-                "type": "object",
-                "properties": {
-                  "filmId": {
-                    "type": "number",
-                    "example": 1
-                  },
-                  "text": {
-                    "type": "string"
-                  }
-                }
-              },
-              "example": {
-                "filmId": 1,
-                "text": "another elaborate propaganda. Saving the best for the last"
-              }
-            }
-          }
-        },
         "responses": {
           "200": {
             "description": "all comments example",
@@ -480,29 +458,7 @@
             "description": "filter by gender"
           }
         ],
-        "requestBody": {
-          "content": {
-            "application/json": {
-              "schema": {
-                "type": "object",
-                "properties": {
-                  "filmId": {
-                    "type": "number",
-                    "example": 1
-                  },
-                  "text": {
-                    "type": "string",
-                    "example": "another elaborate propaganda. Saving the best for the last"
-                  }
-                }
-              },
-              "example": {
-                "filmId": 1,
-                "text": "another elaborate propaganda. Saving the best for the last"
-              }
-            }
-          }
-        },
+     
         "responses": {
           "200": {
             "description": "characters",

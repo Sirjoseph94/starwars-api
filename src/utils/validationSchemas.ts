@@ -22,11 +22,19 @@ export type characterType = z.infer<typeof characterSchema>["query"];
 export const filmIdschema = z.object({
   params: z.object({
     id: z.string().transform((val, ctx) => {
-      const parsed = parseInt(val);
+      const parsed = Number(val);
       if (isNaN(parsed)) {
         ctx.addIssue({
           code: z.ZodIssueCode.custom,
           message: "Not a number",
+        });
+
+        return z.NEVER;
+      }
+      if (parsed > 6) {
+        ctx.addIssue({
+          code: z.ZodIssueCode.custom,
+          message: "filmID should not be greater than 6",
         });
         return z.NEVER;
       }

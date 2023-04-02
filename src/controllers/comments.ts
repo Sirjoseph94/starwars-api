@@ -1,7 +1,7 @@
 import { Request, Response } from "express";
 import { commentsType } from "../utils/validationSchemas.js";
 import { failed, success } from "../utils/formatResponse.js";
-import { getComments, listComments, newComment } from "../services/comments.js";
+import {  listComments, newComment } from "../services/comments.js";
 
 export const addComment = async (req: Request, res: Response) => {
  try {

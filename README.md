@@ -26,8 +26,9 @@ To get started, clone this repository to your local machine and run the followin
 ## API Endpoints
 
 The API documentation of the availible endpoints can be found here
-[API DOC](https://mystarwars.up.railway.app/api-doc)
+[API DOC](https://mystarwars.up.railway.app/api-docs)
 
 ## Live DEMO
 The live demo is hosted here
+
 [Live demo link](https://mystarwars.up.railway.app/)

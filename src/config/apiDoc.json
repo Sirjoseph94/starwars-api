@@ -24,7 +24,7 @@
         "responses": {
           "200": {
             "description": "movies_example",
-           
+
             "content": {
               "application/json": {
                 "schema": {
@@ -141,7 +141,7 @@
         "responses": {
           "200": {
             "description": "singleMovie_example",
-        
+
             "content": {
               "application/json": {
                 "schema": {
@@ -275,7 +275,7 @@
         "responses": {
           "200": {
             "description": "all comments example",
-         
+
             "content": {
               "application/json": {
                 "schema": {
@@ -389,7 +389,7 @@
         "responses": {
           "201": {
             "description": "addComment",
-            
+
             "content": {
               "application/json": {
                 "schema": {
@@ -506,7 +506,7 @@
         "responses": {
           "200": {
             "description": "characters",
-           
+
             "content": {
               "application/json": {
                 "schema": {

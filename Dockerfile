@@ -1,6 +1,5 @@
 FROM node:18-alpine
 
-
 # Create server directory
 WORKDIR /usr/src/server
 

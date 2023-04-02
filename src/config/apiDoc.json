@@ -8,7 +8,12 @@
   },
   "servers": [
     {
-      "url": "http://localhost:5000"
+      "url": "http://localhost:5000",
+      "description": "local dev"
+    },
+    {
+      "url": "https://mystarwars.up.railway.app/",
+      "description": "Test environment"
     }
   ],
   "paths": {

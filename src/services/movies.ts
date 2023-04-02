@@ -22,7 +22,6 @@ export const getOneMovie = async (filmId: number) => {
     const response = await apiCall(`films/${filmId}`);
     const movieComments = await getComments(filmId);
     const data = await movieDTO(response, movieComments);
-    console.log(data);
     return { statusCode: 200, message: data };
   } catch (error) {
     console.error(error);

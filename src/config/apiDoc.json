@@ -3,12 +3,16 @@
   "info": {
     "title": "starwars_api",
     "description": "# Starwars API\n\nThis is a simple REST API built with Express.js that consumes the Star Wars API (SWAPI) to retrieve information about the Star Wars universe. The API endpoints allow you to retrieve information about characters, films, and make your comments.",
-    "version": "1.0.0",
-    "contact": {}
+    "version": "1.0.0"
   },
   "servers": [
     {
-      "url": "http://localhost:5000"
+      "url": "http://localhost:5000",
+      "description": "local dev"
+    },
+    {
+      "url": "https://mystarwars.up.railway.app/",
+      "description": "Test environment"
     }
   ],
   "paths": {

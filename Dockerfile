@@ -5,7 +5,7 @@ WORKDIR /usr/src/server
 
 COPY . /usr/src/server
 
-RUN pnpm install
+RUN npm install
 
 EXPOSE 5000
 

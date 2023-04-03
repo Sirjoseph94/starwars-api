@@ -11,16 +11,16 @@ export const allMoviesDTO = async (obj: Record<string, any>) => {
     };
   });
 
-  //add comments count to movie object
-  const res = await movieObject.reduce(async (total: any, current: any) => {
-    let count = await db.comment.count({ where: { filmId: current.filmId } });
-    current.commentsCount = count;
-     (await total).push(current);
-     return total
-  }, []);
-  console.log(await res);
 
-  return await res;
+  // Add comments count to movie object
+  const counts = await Promise.all(
+    movieObject.map(async (movie: any) => {
+      const count = await db.comment.count({ where: { filmId: movie.filmId } });
+      return { ...movie, commentsCount: count };
+    })
+  );
+
+  return counts;
 };
 
 export const movieDTO = async (film: any, comment: Record<string, any>) => {
